@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
-
-ruby '2.4.1'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 gem 'bcrypt',         '3.1.12'
@@ -60,6 +56,10 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
   gem 'guard',                    '2.13.0'
+  gem 'minitest'
+  gem 'minitest-reporters'
+  gem 'guard-minitest'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
