@@ -7,9 +7,9 @@ class UserTest < ActiveSupport::TestCase
   # end
 
 def Setup
-    @user = User.new(name: "Example User",email:"user@example.com,
+    @user = User.new(name: "Example User",email:"user@example.com",
              password: "foobar", password_confirmation: "foobar")
-  end
+end
 
   test "should be valid" do
   assert @user.valid?
